@@ -1,0 +1,30 @@
+{
+    "name": "adm/object_manager",
+    "description": "Object Manager/Dependency Injection Container",
+    "type": "library",
+    "require-dev": {
+        "opsway/psr12-strict-coding-standard": "^0.4.0",
+        "phpunit/phpunit": "^9.2",
+        "phpmd/phpmd": "^2.8"
+    },
+    "license": "Unlicense",
+    "authors": [
+        {
+            "name": "Ashley Marchington",
+            "email": "ashmarchington@gmail.com"
+        }
+    ],
+    "require": {
+        "psr/container": "^1.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adm\\ObjectManager\\Test\\": "src/Test"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Adm\\ObjectManager\\": "src/object_manager"
+        }
+    }
+}
